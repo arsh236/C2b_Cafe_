@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 220">
+  <style>
+    .logo-text { font-family: 'Playfair Display', serif; font-weight: bold; }
+    .logo-tagline { font-family: 'Lato', sans-serif; letter-spacing: 0.2em; font-weight: 700; }
+  </style>
+  <!-- Icon: Simple Cup -->
+  <g transform="translate(210, 10) scale(0.6)">
+    <path d="M10,50 Q10,90 50,90 H70 Q110,90 110,50 V40 H10 Z M110,50 Q130,50 130,70 Q130,90 110,90" stroke="#5d4037" stroke-width="6" fill="none"/>
+    <path d="M40,30 Q50,10 60,30 T80,30" stroke="#5d4037" stroke-width="4" fill="none"/>
+    <path d="M60,25 Q70,5 80,25 T100,25" stroke="#5d4037" stroke-width="4" fill="none"/>
+  </g>
+  <!-- Text -->
+  <text x="50%" y="150" class="logo-text" font-size="80" fill="#5d4037" text-anchor="middle">C2b Cafe</text>
+  <text x="50%" y="190" class="logo-tagline" font-size="22" fill="#8d6e63" text-anchor="middle">BREWED TO BALANCE</text>
+</svg>
