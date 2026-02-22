@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <!-- Define paths for text curvature -->
+    <path id="topCurve" d="M 60,160 Q 200,80 340,160" />
+    <path id="bottomCurve" d="M 70,290 Q 200,360 330,290" />
+  </defs>
+
+  <!-- Background -->
+  <!-- Outer Ring -->
+  <circle cx="200" cy="200" r="195" fill="#FFF8E7" stroke="#4A342E" stroke-width="8"/>
+  <!-- Inner Thin Ring -->
+  <circle cx="200" cy="200" r="175" fill="none" stroke="#4A342E" stroke-width="2"/>
+  
+  <!-- Top Section -->
+  <!-- Steam -->
+  <path d="M 185,60 Q 190,50 185,40" stroke="#4A342E" stroke-width="3" fill="none"/>
+  <path d="M 200,55 Q 205,45 200,35" stroke="#4A342E" stroke-width="3" fill="none"/>
+  <path d="M 215,60 Q 220,50 215,40" stroke="#4A342E" stroke-width="3" fill="none"/>
+  
+  <!-- Top Cup -->
+  <path d="M 170,70 L 230,70 L 225,100 Q 200,110 175,100 Z" fill="#4A342E"/>
+  <path d="M 230,75 Q 240,75 240,85 Q 240,95 230,95" stroke="#4A342E" stroke-width="4" fill="none"/>
+  
+  <!-- Stars -->
+  <polygon points="140,85 145,95 155,95 147,102 150,112 140,105 130,112 133,102 125,95 135,95" fill="#4A342E"/>
+  <polygon points="260,85 265,95 275,95 267,102 270,112 260,105 250,112 253,102 245,95 255,95" fill="#4A342E"/>
+
+  <!-- Center Text -->
+  <text x="200" y="210" font-family="'Times New Roman', serif" font-weight="bold" font-size="120" fill="#4A342E" text-anchor="middle">C2B</text>
+  
+  <!-- Cafe Text Section -->
+  <g transform="translate(0, 30)">
+    <!-- Left Bean -->
+    <path d="M 90,210 Q 110,200 110,220 Q 90,230 90,210 M 95,215 Q 100,210 105,220" fill="#4A342E" stroke="#FFF8E7" stroke-width="1"/>
+    
+    <!-- CAFE Text -->
+    <text x="200" y="225" font-family="sans-serif" font-weight="bold" font-size="40" fill="#4A342E" text-anchor="middle" letter-spacing="5">- CAFÉ -</text>
+     
+    <!-- Right Bean -->
+    <path d="M 290,210 Q 310,200 310,220 Q 290,230 290,210 M 295,215 Q 300,210 305,220" fill="#4A342E" stroke="#FFF8E7" stroke-width="1"/>
+  </g>
+
+  <!-- Bottom Curved Text -->
+  <text font-family="'Georgia', serif" font-weight="bold" font-size="24" fill="#4A342E">
+    <textPath href="#bottomCurve" startOffset="50%" text-anchor="middle">
+      Sip. Smile. Stay awhile.
+    </textPath>
+  </text>
+  
+  <!-- Bottom Smiley Cup -->
+  <g transform="translate(180, 330) scale(0.8)">
+    <!-- Cup Body -->
+    <path d="M 0,0 L 50,0 L 45,40 Q 25,55 5,40 Z" fill="#FFF8E7" stroke="#4A342E" stroke-width="3"/> 
+    <!-- Handle -->
+    <path d="M 50,10 Q 65,10 65,25 Q 65,40 50,40" stroke="#4A342E" stroke-width="3" fill="none"/>
+    <!-- Smiley Face -->
+    <circle cx="15" cy="15" r="2" fill="#4A342E"/>
+    <circle cx="35" cy="15" r="2" fill="#4A342E"/>
+    <path d="M 15,25 Q 25,35 35,25" stroke="#4A342E" stroke-width="2" fill="none"/>
+  </g>
+
+</svg>
