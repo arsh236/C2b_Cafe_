@@ -1,0 +1,214 @@
+/* Global Styles */
+:root {
+    --bg-color: #fdf6e7;
+    /* Cream background */
+    --text-color: #5d4037;
+    /* Dark Coffee Brown */
+    --accent-color: #8d6e63;
+    /* Lighter Brown */
+    --gold-color: #b8860b;
+    /* Gold for subtle accents */
+    --white: #ffffff;
+    --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --border-radius: 16px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center content vertically if screen is tall */
+    min-height: 100vh;
+    padding: 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    /* Mobile-first limit */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Header / Logo */
+.header {
+    margin-top: 20px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    filter: drop-shadow(0 4px 6px rgba(93, 64, 55, 0.1));
+}
+
+/* Navigation Grid */
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 Columns as per reference */
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-out 0.2s backwards;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    gap: 10px;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.nav-item:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--text-color);
+    /* Outline style from reference */
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: var(--transition);
+    background-color: transparent;
+}
+
+.nav-item:hover .icon-box {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    box-shadow: 0 10px 20px rgba(93, 64, 55, 0.2);
+}
+
+.label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Footer */
+.footer {
+    animation: fadeInUp 1s ease-out 0.4s backwards;
+    margin-top: auto;
+    padding-bottom: 20px;
+    opacity: 0.8;
+}
+
+.tagline {
+    font-family: var(--font-primary);
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.address {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* Keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Tweak for very small screens */
+@media (max-width: 360px) {
+    .nav-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Switch to 2 columns on very narrow screens */
+        gap: 15px;
+    }
+
+    .icon-box {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+}
+
+/* Floating Share Button */
+.fab-share {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(93, 64, 55, 0.4);
+    transition: var(--transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fab-share:hover {
+    transform: scale(1.1);
+    background-color: var(--gold-color);
+    box-shadow: 0 6px 16px rgba(184, 134, 11, 0.4);
+}
+
+.logo-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo-img {
+    height: auto;
+    max-width: 250px;   /* control size softly */
+}
