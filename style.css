@@ -1,7 +1,9 @@
 /* Global Styles */
 :root {
-    --bg-color: #fdf6e7;
+    /*--bg-color: #fdf6e7;*/    
     /* Cream background */
+    --bg-color: #fefefe;
+    
     --text-color: #5d4037;
     /* Dark Coffee Brown */
     --accent-color: #8d6e63;
@@ -211,4 +213,5 @@ body {
 .logo-img {
     height: auto;
     max-width: 250px;   /* control size softly */
+
 }
